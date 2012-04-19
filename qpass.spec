@@ -28,7 +28,11 @@ and description.
 %makeinstall_std -C build
 %__rm -f %{buildroot}/%{_datadir}/%{name}/{COPYING,README}
 %__mkdir_p  %{buildroot}/%{_docdir}
+%if %{mdvver} >= 201200
 %find_lang %{name} --with-qt --all-name
+%else
+touch %{name}.lang
+%endif
 
 %files -f %{name}.lang
 %dir %{_datadir}/%{name}
@@ -38,3 +42,6 @@ and description.
 %{_iconsdir}/hicolor/*/apps/qpass.png
 %{_datadir}/pixmaps/qpass.png
 %doc ChangeLog README
+%if %mdvver < 201200
+%{_datadir}/%{name}/translations/*
+%endif
