@@ -6,6 +6,7 @@ License:	GPLv2+
 Group:		Databases
 URL:		http://qpass.sourceforge.net/
 Source0:	http://downloads.sourceforge.net/project/qpass/source/%{name}-%{version}.tar.bz2
+BuildRequires:	cmake
 BuildRequires:	qt4-devel
 BuildRequires:	libgcrypt-devel
 
