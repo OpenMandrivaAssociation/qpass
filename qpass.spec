@@ -45,3 +45,10 @@ touch %{name}.lang
 %if %mdvver < 201200
 %{_datadir}/%{name}/translations/*
 %endif
+
+
+%changelog
+* Thu Apr 19 2012 Dmitry Mikhirev <dmikhirev@mandriva.org> 1.2.1-1
++ Revision: 791952
+- imported package qpass
+
