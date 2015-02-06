@@ -1,7 +1,7 @@
 Name:		qpass
 Summary:	Qt4-based password manager
 Version:	1.2.1
-Release:	1
+Release:	2
 License:	GPLv2+
 Group:		Databases
 URL:		http://qpass.sourceforge.net/
