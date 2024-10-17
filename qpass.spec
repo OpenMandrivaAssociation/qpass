@@ -4,7 +4,7 @@ Version:	1.2.1
 Release:	2
 License:	GPLv2+
 Group:		Databases
-URL:		http://qpass.sourceforge.net/
+URL:		https://qpass.sourceforge.net/
 Source0:	http://downloads.sourceforge.net/project/qpass/source/%{name}-%{version}.tar.bz2
 BuildRequires:	cmake
 BuildRequires:	qt4-devel
